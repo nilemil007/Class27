@@ -1,0 +1,184 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+a > i{
+	margin-left: 5px;
+}
+.fixed{
+	display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container{
+	display: flex;
+    align-items: center;
+    justify-content: space-between;
+	width: 1140px;
+	padding:0 20px;
+	margin:0 auto;
+}
+.header-area img{
+	width: 100%;
+	height: auto;
+}
+nav{
+	background-color: lightslategray;
+	position: relative;
+}
+.logo{
+	margin-right: 20px;
+}
+.logo i{
+	font-size: 36px;
+    color: #ffffff;
+}
+.logo a{
+	padding: 5px 20px;
+	display: block;
+}
+.main-menu{
+	list-style: none;
+}
+.main-menu li{
+	display: inline-block;
+	position: relative;
+}
+.main-menu li a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.main-menu li a:hover{
+	background-color: darkgray;
+}
+.dropdown{
+	display: none;
+	background: lightslategray;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+.dropdown li{
+	display: block;
+}
+.dropdown li a{
+	white-space: nowrap;
+}
+.dropdown li a:hover{
+	background-color: darkgray;
+}
+
+.dropdown ul{
+	display: none;
+	top: 0;
+    left: 100%;
+}
+
+
+.mobile-menu{
+	display: none;
+    border: 1px solid lightgray;
+    background: transparent;
+    padding: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.mobile-menu .bar{
+    width: 22px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+}
+.mobile-menu .bar:not(:last-child){
+	margin-bottom: 5px;
+}
+.scrollTop{
+	display: none;
+	background: black;
+    color: #fff;
+    position: fixed;
+    bottom: 30px;
+    right: 3%;
+    padding: 13px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.section{
+	width: 70%;
+	margin: 50px auto;
+}
+.section p{
+	margin-top: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1199.98px){
+	.container{
+		width: 960px;
+	}	
+}
+
+@media screen and (max-width: 991.98px){
+	.container{
+		width: 720px;
+	}
+	.main-menu{
+		position: absolute;
+	    top: 100%;
+	    left: 0;
+	    background: lightslategray;
+	    width: 100%;
+	    text-align: center;
+	}
+	.main-menu li{
+		display: block;
+	}
+
+	.dropdown {
+	    background: darkblue;
+	    position: static;
+	    padding-left: 50px;
+	}
+	.dropdown li a{
+		font-size: 12px;
+	}
+	.dropdown li a:hover{
+		border-radius: 30px 0px 0px 30px;
+	}
+
+
+	.mobile-menu{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 767.98px){
+	.container{
+		width: 100%;
+	}	
+}
